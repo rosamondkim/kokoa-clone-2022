@@ -1,0 +1,32 @@
+body{
+    height: 100vh;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outside{
+    background-color: wheat;
+    height: 300px;
+    width: 300px;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+}
+.inside{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.inside__row{
+    background-color: teal;
+    border: 4px solid white;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+.inside__row:nth-child(2){
+    width: 250px;
+    border: 3px dashed white;
+}

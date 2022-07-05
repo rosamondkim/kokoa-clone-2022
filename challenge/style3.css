@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    display: flex;
+    justify-content: center;
+}
+.playlist{
+    border:5px solid #00C6AD;
+    width: 500px;
+    height: 1000px;
+    padding :30px;
+
+}
+.status-bar{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+.status-bar__column{
+    width: 33%;
+}
+.status-bar__column:nth-child(2){
+    display: flex;
+    justify-content: center;
+    font-size:20px;
+    font-weight: 600;
+}
+.album{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+.album__cover{
+    width: 200px;
+    height: 200px;
+    background-color: #FFBD11;
+    border-radius: 10%;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.album__cover i{
+    color:white;
+}
+.album__info{
+    display: flex;
+    flex-direction: column;
+
+}
+.album__title{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 65px;
+}
+.album__singer{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button__column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:3px solid black;
+    border-bottom-width: 6px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+.button__column:first-child{
+    width: 250px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.button__column:first-child span{
+    margin-left: 10px;
+    font-weight: 600;
+}
+.album-list{
+    list-style:none; 
+    margin-top:50px;
+    display: block;
+
+}
+.album-list-component{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+.album-list-component__column{
+    height: 70px;
+    width: 70px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: tomato;
+    margin-right: 20px;
+    
+}
+.album-list-component__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.album-list-component__title{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.album-list-component-singer{
+    font-size:15px;
+    margin:10px 0;
+}
+.album-list-component:nth-child(2) div:first-child{
+    background-color: #FF89BB;
+}
+.album-list-component:nth-child(3) div:first-child{
+    background-color: #1947E5;
+}
+.album-list-component:last-child div:first-child{
+    background-color: #00C6AD;
+}

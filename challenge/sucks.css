@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+body{
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 310px;
+  }
+.status-bar{
+    box-sizing: border-box;
+    background-color: #FFCE33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding: 0 10px;
+    position: relative;
+}
+.status-bar__column{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    top: 90px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2) ;
+}
+.search__column{
+    padding:0 20px;
+    color:rgba(0,0,0,0.2);
+    font-size: small;
+}
+.library{
+    width: 280px;
+}
+.library-today{
+    padding-top: 20px;
+    background-color: white;
+}
+.today-book{
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.today-book__cover img{
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.today-book__info{
+    display: flex;
+    flex-direction: column;
+}
+.today-book__title{
+    font-weight: 600;
+}
+.today-book__author{
+    font-size: 13px;
+    color: rgba(0,0,0,0.2);
+}
+.today-book__star{
+    margin: 5px 0;
+    font-size: 10px;
+    color: #FFCE33;
+}
+.today-book__star i:last-child{
+    color:rgba(0,0,0,0.1);
+}
+.today-book__buttons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 10px 0;
+    
+}
+.today-book__botton{
+    background-color: #F7F7F7;
+    padding: 5px 7px;
+    margin-right: 10px;
+    border-radius: 10%;
+}
+.today-book__booking{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.today-book__bookmark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #FFCE33;
+}
+.today-book__now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: black;
+    border-radius: 10px;
+    height: 30px;
+    padding: 3px 20px;
+    font-weight: 40px;
+    color:white;
+}
+.library-top__title{
+    margin-bottom: 15px;
+}
+.top-booklist{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.top-book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+    
+}
+.top-book__cover img{
+    width: 70px;
+    height: 100px;
+    border-radius: 10%;
+}
+.top-book__star{
+    margin: 5px 0;
+    font-size: 8px;
+    color:#FFCE33;
+}
+.top-book__star i:last-child{
+    color:rgba(0,0,0,0.1);
+}
+.library-author__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.author__cover img{
+    width: 100px;
+    height: 130px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.author__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.author__name{
+    font-weight: 600;
+}
+.author__content{
+    margin: 5px 0;
+    color:rgba(0,0,0,0.2);
+    font-size: 12px;
+}

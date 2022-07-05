@@ -1,0 +1,29 @@
+#friends-display-link{
+    display: block;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 15px 0;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+#friends-display-link i{
+    color: var(--gray);
+}
+
+@keyframes hideSpalahScreen{
+    from {opacity: 1;}
+    to {opacity: 0;
+    visibility: hidden;}
+}
+#splash-screen{
+    background-color: var(--yellow);
+    position: absolute;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    animation: hideSpalahScreen 1s ease-in-out forwards;
+}
